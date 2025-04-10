@@ -10,7 +10,7 @@
             line-height: 1.6;
             margin: 20px;
         }
-        h1, h2 {
+        h1, h2, h3 {
             color: #333;
         }
         table {
@@ -31,53 +31,127 @@
             font-style: italic;
             color: #777;
         }
+        .collapsible {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        .active, .collapsible:hover {
+            background-color: #ccc;
+        }
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #f1f1f1;
+            margin-bottom: 10px;
+        }
+        .content p, .content ul {
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
     <h1>Plano Alimentar de Exemplo</h1>
 
-    <h2>Pequeno-almoço</h2>
-    <h3>Opção 1</h3>
-    <p>2 x Iogurtes enriquecidos em proteína - ~40g de Proteína, ~20g de Hidratos de Carbono, ~2g de Gordura</p>
-    <p>3 x Ovos inteiros - ~18g de Proteína, ~15g de Gordura, ~1g de Hidratos de Carbono</p>
-    <p>1 fatia de Pão integral - ~5g de Proteína, ~1g de Gordura, ~20g de Hidratos de Carbono</p>
-    <p>Pequena peça de fruta - ~0g de Proteína, ~0g de Gordura, ~13g de Hidratos de Carbono</p>
-    <h3>Opção 2</h3>
-    <p>1 x Iogurte enriquecido em proteína - ~30g de Proteína, ~15g de Hidratos de Carbono, ~1g de Gordura</p>
-    <p>Omelete com 2 ovos inteiros e 28g de queijo magro - ~16g de Proteína, ~12g de Gordura, ~2g de Hidratos de Carbono</p>
-    <p>1 chávena de Aveia cozida - ~5g de Proteína, ~1g de Gordura, ~28g de Hidratos de Carbono</p>
-    <p>Pequeno punhado de bagas - ~0g de Proteína, ~0g de Gordura, ~6g de Hidratos de Carbono</p>
+    <h2>Objetivos de Macronutrientes (Opção 1 - Gordura Moderada, 150g de Proteína)</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Macronutriente</th>
+                <th>Quantidade Recomendada</th>
+                <th>Calorias (aprox.)</th>
+                <th>Notas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Proteína</strong></td>
+                <td><strong>150 gramas</strong></td>
+                <td><strong>600</strong></td>
+                <td>Crucial para a preservação e crescimento muscular, promove a saciedade. Escolha fontes magras.</td>
+            </tr>
+            <tr>
+                <td><strong>Gorduras</strong></td>
+                <td><strong>~61 gramas</strong></td>
+                <td><strong>~551</strong></td>
+                <td>Fornece gorduras essenciais para a produção hormonal e saúde geral. Concentre-se em gorduras insaturadas.</td>
+            </tr>
+            <tr>
+                <td><strong>Hidratos de Carbono</strong></td>
+                <td><strong>~171 gramas</strong></td>
+                <td><strong>~685</strong></td>
+                <td>Fornece energia para treinos e atividades diárias. Priorize hidratos de carbono complexos para energia e fibra sustentadas.</td>
+            </tr>
+            <tr>
+                <td><strong>Total de Calorias</strong></td>
+                <td><strong>~1836</strong></td>
+                <td><strong>(Objetivo: 1836)</strong></td>
+                <td>Representa um défice calórico de ~500 para o seu TDEE estimado.</td>
+            </tr>
+        </tbody>
+    </table>
 
-    <h2>Almoço</h2>
-    <h3>Opção 1</h3>
-    <p>150g de Peito de frango grelhado - ~45g de Proteína, ~3g de Gordura, ~0g de Hidratos de Carbono</p>
-    <p>1 chávena de Arroz integral cozido - ~5g de Proteína, ~2g de Gordura, ~45g de Hidratos de Carbono</p>
-    <p>1 chávena de Legumes cozidos a vapor com 1 colher de chá de azeite - ~2g de Proteína, ~5g de Gordura, ~5g de Hidratos de Carbono</p>
-    <h3>Opção 2</h3>
-    <p>1 lata de Atum em água - ~30g de Proteína, ~1g de Gordura, ~0g de Hidratos de Carbono</p>
-    <p>2 fatias de Pão integral - ~10g de Proteína, ~2g de Gordura, ~40g de Hidratos de Carbono</p>
-    <p>1/4 de Abacate - ~1g de Proteína, ~9g de Gordura, ~4g de Hidratos de Carbono</p>
-    <p>Pequena salada com vinagrete leve - ~1g de Proteína, ~3g de Gordura, ~6g de Hidratos de Carbono</p>
+    <h2>Plano Alimentar</h2>
 
-    <h2>Jantar</h2>
-    <h3>Opção 1</h3>
-    <p>150g de Coxa de frango assada - ~35g de Proteína, ~10g de Gordura, ~0g de Hidratos de Carbono</p>
-    <p>1.5 chávenas de Arroz branco cozido - ~7g de Proteína, ~1g de Gordura, ~60g de Hidratos de Carbono</p>
-    <p>Salada grande com molho leve - ~3g de Proteína, ~9g de Gordura, ~5g de Hidratos de Carbono</p>
-    <h3>Opção 2</h3>
-    <p>170g de Bife de atum grelhado - ~40g de Proteína, ~5g de Gordura, ~0g de Hidratos de Carbono</p>
-    <p>1 Batata doce média assada - ~2g de Proteína, ~0g de Gordura, ~25g de Hidratos de Carbono</p>
-    <p>1 chávena de Legumes assados com 1 colher de chá de azeite - ~3g de Proteína, ~5g de Gordura, ~10g de Hidratos de Carbono</p>
-    <p>1 fatia de Pão integral - ~5g de Proteína, ~1g de Gordura, ~20g de Hidratos de Carbono</p>
+    <button type="button" class="collapsible">Pequeno-almoço</button>
+    <div class="content">
+        <h3>Opção 1</h3>
+        <p>2 x Iogurtes enriquecidos em proteína - ~40g de Proteína, ~20g de Hidratos de Carbono, ~2g de Gordura</p>
+        <p>3 x Ovos inteiros - ~18g de Proteína, ~15g de Gordura, ~1g de Hidratos de Carbono</p>
+        <p>1 fatia de Pão integral - ~5g de Proteína, ~1g de Gordura, ~20g de Hidratos de Carbono</p>
+        <p>Pequena peça de fruta - ~0g de Proteína, ~0g de Gordura, ~13g de Hidratos de Carbono</p>
+        <h3>Opção 2</h3>
+        <p>1 x Iogurte enriquecido em proteína - ~30g de Proteína, ~15g de Hidratos de Carbono, ~1g de Gordura</p>
+        <p>Omelete com 2 ovos inteiros e 28g de queijo magro - ~16g de Proteína, ~12g de Gordura, ~2g de Hidratos de Carbono</p>
+        <p>1 chávena de Aveia cozida - ~5g de Proteína, ~1g de Gordura, ~28g de Hidratos de Carbono</p>
+        <p>Pequeno punhado de bagas - ~0g de Proteína, ~0g de Gordura, ~6g de Hidratos de Carbono</p>
+    </div>
 
-    <h2>Snacks</h2>
-    <p>Escolher um ou dois:</p>
-    <ul>
-        <li>Pequeno punhado de amêndoas - ~6g de Proteína, ~15g de Gordura, ~6g de Hidratos de Carbono</li>
-        <li>1 scoop de Whey Protein com água - ~20-25g de Proteína, ~1-2g de Gordura, ~2-5g de Hidratos de Carbono</li>
-        <li>Pequeno recipiente de Queijo cottage magro - ~25g de Proteína, ~5g de Gordura, ~5g de Hidratos de Carbono</li>
-        <li>2 bolachas de arroz com 2 colheres de sopa de manteiga de amendoim - ~7g de Proteína, ~16g de Gordura, ~16g de Hidratos de Carbono</li>
-    </ul>
+    <button type="button" class="collapsible">Almoço</button>
+    <div class="content">
+        <h3>Opção 1</h3>
+        <p>150g de Peito de frango grelhado - ~45g de Proteína, ~3g de Gordura, ~0g de Hidratos de Carbono</p>
+        <p>1 chávena de Arroz integral cozido - ~5g de Proteína, ~2g de Gordura, ~45g de Hidratos de Carbono</p>
+        <p>1 chávena de Legumes cozidos a vapor com 1 colher de chá de azeite - ~2g de Proteína, ~5g de Gordura, ~5g de Hidratos de Carbono</p>
+        <h3>Opção 2</h3>
+        <p>1 lata de Atum em água - ~30g de Proteína, ~1g de Gordura, ~0g de Hidratos de Carbono</p>
+        <p>2 fatias de Pão integral - ~10g de Proteína, ~2g de Gordura, ~40g de Hidratos de Carbono</p>
+        <p>1/4 de Abacate - ~1g de Proteína, ~9g de Gordura, ~4g de Hidratos de Carbono</p>
+        <p>Pequena salada com vinagrete leve - ~1g de Proteína, ~3g de Gordura, ~6g de Hidratos de Carbono</p>
+    </div>
+
+    <button type="button" class="collapsible">Jantar</button>
+    <div class="content">
+        <h3>Opção 1</h3>
+        <p>150g de Coxa de frango assada - ~35g de Proteína, ~10g de Gordura, ~0g de Hidratos de Carbono</p>
+        <p>1.5 chávenas de Arroz branco cozido - ~7g de Proteína, ~1g de Gordura, ~60g de Hidratos de Carbono</p>
+        <p>Salada grande com molho leve - ~3g de Proteína, ~9g de Gordura, ~5g de Hidratos de Carbono</p>
+        <h3>Opção 2</h3>
+        <p>170g de Bife de atum grelhado - ~40g de Proteína, ~5g de Gordura, ~0g de Hidratos de Carbono</p>
+        <p>1 Batata doce média assada - ~2g de Proteína, ~0g de Gordura, ~25g de Hidratos de Carbono</p>
+        <p>1 chávena de Legumes assados com 1 colher de chá de azeite - ~3g de Proteína, ~5g de Gordura, ~10g de Hidratos de Carbono</p>
+        <p>1 fatia de Pão integral - ~5g de Proteína, ~1g de Gordura, ~20g de Hidratos de Carbono</p>
+    </div>
+
+    <button type="button" class="collapsible">Snacks</button>
+    <div class="content">
+        <p>Escolher um ou dois:</p>
+        <ul>
+            <li>Pequeno punhado de amêndoas - ~6g de Proteína, ~15g de Gordura, ~6g de Hidratos de Carbono</li>
+            <li>1 scoop de Whey Protein com água - ~20-25g de Proteína, ~1-2g de Gordura, ~2-5g de Hidratos de Carbono</li>
+            <li>Pequeno recipiente de Queijo cottage magro - ~25g de Proteína, ~5g de Gordura, ~5g de Hidratos de Carbono</li>
+            <li>2 bolachas de arroz com 2 colheres de sopa de manteiga de amendoim - ~7g de Proteína, ~16g de Gordura, ~16g de Hidratos de Carbono</li>
+        </ul>
+    </div>
 
     <div class="notes">
         <h2>Notas Importantes:</h2>
@@ -89,5 +163,23 @@
         <p>Monitorização: Use uma aplicação de controlo alimentar para registar as suas refeições.</p>
         <p>Ouça o Seu Corpo: Ajuste os tamanhos das porções com base nos seus sinais de fome e saciedade.</p>
     </div>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
 </body>
 </html>
